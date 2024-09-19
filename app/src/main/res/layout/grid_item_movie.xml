@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/movieImg"
+        android:layout_width="190dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@drawable/movie_1" />
+
+    <!-- Semi-transparent overlay -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/movieImg"
+        android:layout_alignTop="@+id/movieImg"
+        android:layout_alignEnd="@+id/movieImg"
+        android:layout_alignBottom="@+id/movieImg"
+        android:background="#50000000" />
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/movieRating"
+        android:layout_alignStart="@+id/movieImg"
+        android:layout_alignEnd="@+id/movieImg"
+        android:layout_marginStart="8dp"
+        android:text="Dune (Part II)"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/movieRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/movieImg"
+        android:layout_alignEnd="@+id/movieImg"
+        android:layout_alignBottom="@+id/movieImg"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="8.5"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>
