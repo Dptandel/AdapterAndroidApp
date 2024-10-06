@@ -1,4 +1,4 @@
-package com.tops.kotlin.adapterandroidapp.adapter
+package com.tops.kotlin.adapterandroidapp.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.tops.kotlin.adapterandroidapp.R
-import com.tops.kotlin.adapterandroidapp.model.Item
+import com.tops.kotlin.adapterandroidapp.models.Item
 
 class ItemListAdapter(var context: Context, var itemList: MutableList<Item>) :
     Adapter<ItemListAdapter.MyViewHolder>() {
@@ -37,7 +37,7 @@ class ItemListAdapter(var context: Context, var itemList: MutableList<Item>) :
 
         holder.tvItemName.text = item.name
         holder.tvItemQuantity.text = "${item.quantity} ${item.unit}"
-        holder.tvItemPrice.text = "$ ${item.price}"
+        holder.tvItemPrice.text = "$${item.price}"
         holder.imgItem.setImageResource(item.image)
     }
 }

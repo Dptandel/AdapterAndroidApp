@@ -52,8 +52,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, MovieListActivity::class.java))
         }
 
-        binding.btnShowCartItems.setOnClickListener {
+        binding.btnShowFavoriteItems.setOnClickListener {
             startActivity(Intent(this, ItemListActivity::class.java))
+        }
+
+        binding.btnShowCartItems.setOnClickListener {
+            startActivity(Intent(this, CartItemListActivity::class.java))
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.tops.kotlin.adapterandroidapp.model
+package com.tops.kotlin.adapterandroidapp.models
 
 data class Movie(
     val id:Int,

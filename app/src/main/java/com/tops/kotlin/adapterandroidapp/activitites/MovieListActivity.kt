@@ -3,9 +3,9 @@ package com.tops.kotlin.adapterandroidapp.activitites
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.tops.kotlin.adapterandroidapp.R
-import com.tops.kotlin.adapterandroidapp.adapter.MovieListAdapter
+import com.tops.kotlin.adapterandroidapp.adapters.MovieListAdapter
 import com.tops.kotlin.adapterandroidapp.databinding.ActivityMovieListBinding
-import com.tops.kotlin.adapterandroidapp.model.Movie
+import com.tops.kotlin.adapterandroidapp.models.Movie
 
 class MovieListActivity : AppCompatActivity() {
 

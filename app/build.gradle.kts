@@ -1,6 +1,9 @@
+import org.jetbrains.kotlin.gradle.plugin.extraProperties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("plugin.parcelize")
 }
 
 android {

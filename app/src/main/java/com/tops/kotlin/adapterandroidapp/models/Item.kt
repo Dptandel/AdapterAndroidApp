@@ -1,5 +1,9 @@
-package com.tops.kotlin.adapterandroidapp.model
+package com.tops.kotlin.adapterandroidapp.models
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Item(
     val id: Int,
     val name: String,
@@ -7,4 +11,4 @@ data class Item(
     val unit: String,
     val price: Double,
     val image: Int
-)
+) : Parcelable

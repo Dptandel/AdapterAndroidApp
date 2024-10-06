@@ -3,9 +3,9 @@ package com.tops.kotlin.adapterandroidapp.activitites
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.tops.kotlin.adapterandroidapp.R
-import com.tops.kotlin.adapterandroidapp.adapter.PersonListAdapter
+import com.tops.kotlin.adapterandroidapp.adapters.PersonListAdapter
 import com.tops.kotlin.adapterandroidapp.databinding.ActivityCustomListBinding
-import com.tops.kotlin.adapterandroidapp.model.Person
+import com.tops.kotlin.adapterandroidapp.models.Person
 
 class CustomListActivity : AppCompatActivity() {
 

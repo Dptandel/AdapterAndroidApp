@@ -1,4 +1,4 @@
-package com.tops.kotlin.adapterandroidapp.adapter
+package com.tops.kotlin.adapterandroidapp.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import com.tops.kotlin.adapterandroidapp.databinding.ListItemPersonBinding
-import com.tops.kotlin.adapterandroidapp.model.Person
+import com.tops.kotlin.adapterandroidapp.models.Person
 
 class PersonListAdapter(var context: Context, var personList: MutableList<Person>): BaseAdapter() {
 

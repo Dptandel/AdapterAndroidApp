@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitites.MovieListActivity">
+    tools:context=".activitites.CartItemListActivity">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvCartTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingVertical="8dp"
-        android:text="GridView"
+        android:text="Cart RecyclerView"
         android:textColor="@color/black"
         android:textSize="28sp" />
 
-    <GridView
-        android:id="@+id/gridViewLanguages"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:numColumns="2"
+        android:layout_height="wrap_content"
         android:scrollbars="none"
-        android:padding="8dp"
-        android:layout_below="@id/tvTitle"/>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/cartRecyclerView"
+        android:layout_below="@+id/tvCartTitle"/>
 
 </RelativeLayout>

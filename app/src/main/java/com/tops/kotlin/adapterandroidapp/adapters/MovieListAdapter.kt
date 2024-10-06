@@ -1,4 +1,4 @@
-package com.tops.kotlin.adapterandroidapp.adapter
+package com.tops.kotlin.adapterandroidapp.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import com.tops.kotlin.adapterandroidapp.databinding.GridItemMovieBinding
-import com.tops.kotlin.adapterandroidapp.model.Movie
+import com.tops.kotlin.adapterandroidapp.models.Movie
 
 class MovieListAdapter(var context: Context, var movieList: MutableList<Movie>): BaseAdapter() {
 
